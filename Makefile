@@ -5,6 +5,10 @@ check:
 	@echo "Checking project";
 	sh scripts/check.sh
 
+check-ci:
+	@echo "Checking project";
+	sh scripts/check_ci.sh
+
 build:
 	@echo "Building project";
 	sh scripts/build.sh
