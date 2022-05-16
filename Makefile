@@ -9,6 +9,10 @@ build:
 	@echo "Building project";
 	sh scripts/build.sh
 
+install:
+	@echo "Install dependencies";
+	sh scripts/install.sh
+
 swagger:
 	@echo "Updating Swagger"
 	swag init -g cmd/wotracker-back/main.go
