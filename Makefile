@@ -19,8 +19,7 @@ install:
 
 swagger:
 	@echo "Updating Swagger"
-	swag init -g cmd/wotracker-back/main.go
-
+	swag init  -g cmd/wotracker-back/main.go
 
 run:
 	@echo "Running backend";

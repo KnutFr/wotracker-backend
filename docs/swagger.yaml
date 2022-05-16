@@ -1,4 +1,12 @@
 basePath: /api/v1
+definitions:
+  models.Health:
+    properties:
+      code:
+        type: integer
+      responseTime:
+        type: string
+    type: object
 host: localhost:4242
 info:
   contact:
@@ -12,9 +20,27 @@ info:
   termsOfService: http://swagger.io/terms/
   title: Bootstrap Iris
   version: "1.0"
-paths: {}
+paths:
+  /misc/health:
+    get:
+      consumes:
+      - application/json
+      description: get health info
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Health'
+      security:
+      - None: []
+      summary: Health
+      tags:
+      - misc
 securityDefinitions:
   ApiKeyAuth:
+    description: Description for what is this security definition being used
     in: header
     name: Authorization
     type: apiKey

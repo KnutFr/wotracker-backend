@@ -1,4 +1,4 @@
-package health
+package models
 
 type Health struct {
 	Code         int

@@ -13,3 +13,10 @@
 - go-imports
 - golangci-lint
 - go-unit-tests
+
+
+### Install pre-commit hook
+
+```bash
+pre-commit install
+```
