@@ -1,6 +1,6 @@
 module wotracker-back
 
-go 1.18
+go 1.17
 
 require (
 	github.com/iris-contrib/swagger/v12 v12.0.1
