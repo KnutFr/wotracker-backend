@@ -17,6 +17,7 @@ jobs:
         run: |
           go version
           go get -u golang.org/x/lint/golint
+          go install
 
       - name: Run build
         run: make build

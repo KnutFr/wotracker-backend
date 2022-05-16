@@ -17,14 +17,13 @@ jobs:
         run: |
           go version
           go get -u golang.org/x/lint/golint
+          go install
 
       - name: Run build
-        run: go build .
+        run: make build
 
       - name: Run vet & lint
-        run: |
-          go vet .
-          golint .
+        run: make check
 
       - name: Run testing
         run: cd test && go test -v
