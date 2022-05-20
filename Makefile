@@ -1,6 +1,7 @@
 .DEFAULT_GOAL := compile
 .PHONY: build
 all: clean swagger check build  run
+
 check:
 	@echo "Checking project";
 	sh scripts/check.sh
