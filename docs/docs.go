@@ -61,8 +61,11 @@ const docTemplate = `{
                 "code": {
                     "type": "integer"
                 },
+                "dbResponseTime": {
+                    "type": "integer"
+                },
                 "responseTime": {
-                    "type": "string"
+                    "type": "integer"
                 }
             }
         }

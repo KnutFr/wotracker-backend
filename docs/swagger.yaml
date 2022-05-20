@@ -4,8 +4,10 @@ definitions:
     properties:
       code:
         type: integer
+      dbResponseTime:
+        type: integer
       responseTime:
-        type: string
+        type: integer
     type: object
 host: localhost:4242
 info:

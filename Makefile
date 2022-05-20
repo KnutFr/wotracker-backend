@@ -28,3 +28,7 @@ run:
 clean:
 	@echo "Cleaning stuff";
 	sh scripts/clean.sh
+
+db:
+	@echo "Starting DB";
+	sh scripts/start_db.sh

@@ -1,0 +1,3 @@
+POSTGRES_PASSWORD=wotracker
+POSTGRES_USER=wotracker
+POSTGRES_DB=wotracker

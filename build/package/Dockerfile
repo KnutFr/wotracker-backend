@@ -3,7 +3,7 @@
 ##
 ## Build
 ##
-FROM golang:1.16-buster AS build
+FROM golang:1.17-buster AS build
 
 WORKDIR /app
 
@@ -11,9 +11,9 @@ COPY go.mod ./
 COPY go.sum ./
 RUN go mod download
 
-COPY *.go ./
+COPY . ./
 
-RUN go build -o /docker-gs-ping
+RUN make build
 
 ##
 ## Deploy
@@ -22,10 +22,10 @@ FROM gcr.io/distroless/base-debian10
 
 WORKDIR /
 
-COPY --from=build /docker-gs-ping /docker-gs-ping
+COPY --from=build /wotracker-back /wotracker-back
 
-EXPOSE 8080
+EXPOSE 4242
 
 USER nonroot:nonroot
 
-ENTRYPOINT ["/docker-gs-ping"]
+ENTRYPOINT ["/wotracker-back"]

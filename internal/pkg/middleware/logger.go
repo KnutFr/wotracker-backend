@@ -1,4 +1,4 @@
-package logger
+package middleware
 
 import (
 	"github.com/kataras/iris/v12"
