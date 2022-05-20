@@ -16,7 +16,7 @@ import (
 
 type Server struct {
 	app            *iris.Application
-	miscController controller.MiscController
+	miscController *controller.MiscController
 }
 
 func (s *Server) RegisterDependencies(config config.Config) {
@@ -26,7 +26,7 @@ func (s *Server) RegisterDependencies(config config.Config) {
 	//Services
 	healthService := service.NewHealthService(dbInstance)
 	//Controller
-	s.miscController.NewHealthController(healthService)
+	s.miscController = controller.NewMiscController(healthService)
 }
 
 func (s *Server) RegisterRoutes() {

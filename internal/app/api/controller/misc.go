@@ -10,10 +10,11 @@ type MiscController struct {
 	healthService *misc.HealthService
 }
 
-func (c *MiscController) NewHealthController(healthService *misc.HealthService) {
+func NewMiscController(healthService *misc.HealthService) *MiscController {
 	if healthService == nil {
 		log.Fatalf("cannot instanciate service")
 	}
+	return &MiscController{healthService: healthService}
 }
 
 // GetHealth     godoc
