@@ -33,8 +33,10 @@ jobs:
         with:
           version: latest
 
-      - name: Run testing
-        run: cd test && go test -v
+      - name: Run coverage
+        run: go test -race -coverprofile=coverage.out -covermode=atomic -v ./test
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
 
   deploy:
     name: Deploy app
