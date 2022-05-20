@@ -5,9 +5,9 @@ definitions:
       code:
         type: integer
       dbResponseTime:
-        type: integer
+        type: string
       responseTime:
-        type: integer
+        type: string
     type: object
 host: localhost:4242
 info:

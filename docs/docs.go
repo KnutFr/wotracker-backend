@@ -62,10 +62,10 @@ const docTemplate = `{
                     "type": "integer"
                 },
                 "dbResponseTime": {
-                    "type": "integer"
+                    "type": "string"
                 },
                 "responseTime": {
-                    "type": "integer"
+                    "type": "string"
                 }
             }
         }

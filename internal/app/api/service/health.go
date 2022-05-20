@@ -4,6 +4,7 @@ import (
 	"github.com/kataras/iris/v12"
 	log "github.com/sirupsen/logrus"
 	"github.com/uptrace/bun"
+	"strconv"
 	"time"
 	health "wotracker-back/internal/app/api/models"
 )
@@ -31,8 +32,8 @@ func (s *HealthService) GetHealthService(ctx iris.Context) health.Health {
 	elapsedTimeDb := time.Since(beginDb)
 	myHealth := health.Health{
 		Code:           200,
-		ResponseTime:   int64(elapsedTime),
-		DbResponseTime: int64(elapsedTimeDb),
+		ResponseTime:   strconv.FormatInt(int64(elapsedTime.Milliseconds()), 10) + "ms",
+		DbResponseTime: strconv.FormatInt(int64(elapsedTimeDb.Milliseconds()), 10) + "ms",
 	}
 	return myHealth
 }

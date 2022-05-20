@@ -47,6 +47,7 @@ func (s *Server) StartServer(config config.Config) {
 	}
 	s.app.Get("/swagger/{any:path}", swagger.CustomWrapHandler(swaggerConfig, swaggerFiles.Handler))
 
+	s.RegisterDependencies(config)
 	s.RegisterRoutes()
 
 	err := s.app.Listen(":" + config.PortServer)
