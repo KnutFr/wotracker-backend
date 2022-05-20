@@ -107,7 +107,7 @@ See the [`/docs`](docs/README.md) directory for examples.
 
 Supporting tools for this project. Note that these tools can import code from the `/pkg` and `/internal` directories.
 
-See the [`/tools`](tools/README.md) directory for examples.
+See the [`/tools`](test/internal/app/tools/README.md) directory for examples.
 
 ### `/examples`
 
