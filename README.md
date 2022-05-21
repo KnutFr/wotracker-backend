@@ -3,7 +3,10 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/KnutFr/wotracker-backend?style=flat-square)](https://goreportcard.com/report/github.com/KnutFr/wotracker-backend)
 [![GitHub go.mod Go version of a Go module](https://img.shields.io/github/go-mod/go-version/gomods/athens.svg)](https://github.com/gomods/athens)
 
-[![Latest release](https://badgen.net/github/release/Naereen/Strapdown.js)](https://github.com/Naereen/Strapdown.js/releases)
+![Test](https://github.com/knutfr/wotracker-backend/actions/workflows/test.yml/badge.svg)
+![Deploy](https://github.com/knutfr/wotracker-backend/actions/workflows/deploy.yml/badge.svg)
+
+[![GitHub Release](https://img.shields.io/github/v/release/knutfr/wotracker-backend)](https://github.com/KnutFr/wotracker-backend/releases)
 [![Website https://wotracker-back.fly.dev/misc/health](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://wotracker-back.fly.dev/misc/health)
 
 

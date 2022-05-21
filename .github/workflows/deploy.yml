@@ -37,7 +37,8 @@ jobs:
         run: go test -race -coverprofile=coverage.out -covermode=atomic -v ./test
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
-
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
   deploy:
     name: Deploy app
     environment: prd
