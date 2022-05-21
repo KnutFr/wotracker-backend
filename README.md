@@ -1,7 +1,15 @@
 # Bootstrap Iris
 ## Overview
 [![Go Report Card](https://goreportcard.com/badge/github.com/KnutFr/wotracker-backend?style=flat-square)](https://goreportcard.com/report/github.com/KnutFr/wotracker-backend)
+[![GitHub go.mod Go version of a Go module](https://img.shields.io/github/go-mod/go-version/gomods/athens.svg)](https://github.com/gomods/athens)
 
+[![Latest release](https://badgen.net/github/release/Naereen/Strapdown.js)](https://github.com/Naereen/Strapdown.js/releases)
+[![Website https://wotracker-back.fly.dev/misc/health](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://wotracker-back.fly.dev/misc/health)
+
+
+## Deployment
+We use fly.io to deploy this app.
+The backend is available at https://wotracker-back.fly.dev/misc/health
 
 ## Folder Structure
 
